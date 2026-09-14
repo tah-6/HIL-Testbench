@@ -1,0 +1,6 @@
+Debug/
+Release/
+.metadata/
+__pycache__/
+*.pyc
+Blinker CAD Debug.launch

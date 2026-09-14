@@ -1,0 +1,8 @@
+Generated: 2026-09-14T19:29:08
+Iterations: 10000
+
+On-chip latency (DWT-measured, ns):
+  min=642 max=642 mean=642.0 stdev=0.0
+
+Round-trip latency (host perf_counter, us):
+  min=3076.3 max=6156.6 mean=3864.2 stdev=298.4

@@ -1,8 +1,11 @@
-Generated: 2026-09-14T19:29:08
-Iterations: 10000
+Generated: 2026-09-14T20:33:41
+Iterations: 1000
 
 On-chip latency (DWT-measured, ns):
   min=642 max=642 mean=642.0 stdev=0.0
 
 Round-trip latency (host perf_counter, us):
-  min=3076.3 max=6156.6 mean=3864.2 stdev=298.4
+  min=3078.9 max=4879.1 mean=3816.0 stdev=305.0
+
+PING vs TOGGLE round-trip delta (us) - isolates UART byte-transmission cost:
+  mean=2671.8 stdev=439.1 min=1302.9 max=3352.8

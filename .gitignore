@@ -4,3 +4,4 @@ Release/
 __pycache__/
 *.pyc
 Blinker CAD Debug.launch
+Scripts\__pycache__"

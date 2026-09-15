@@ -64,7 +64,6 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN PFP */
-/* USER CODE BEGIN PFP */
 static void handle_line(const char *line) {
   if (strcmp(line, "PING") == 0) {
     uart_send("OK\n");
@@ -78,7 +77,7 @@ static void handle_line(const char *line) {
       uint32_t t0 = DWT->CYCCNT;
       HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
       uint32_t t1 = DWT->CYCCNT;
-
+      __enable_irq();
       uint32_t cycles = t1 - t0;
       uint64_t ns = ((uint64_t)cycles * 1000000000ULL) / SystemCoreClock;
 
@@ -90,7 +89,6 @@ static void handle_line(const char *line) {
     uart_send("ERR\n");
   }
 }
-/* USER CODE END PFP */
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
